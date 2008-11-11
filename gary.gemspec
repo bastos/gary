@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors = ["Tiago Bastos"]
   s.date = %q{2008-11-11}
   s.default_executable = %q{gary}
-  s.description = %q{A Web Slideshow Creator with Markaby}
+  s.description = %q{A Web Presentation Creator with Markaby}
   s.email = %q{comechao@gmail.com}
   s.executables = ["gary"]
   s.extra_rdoc_files = ["bin/gary", "lib/gary.rb", "README.rdoc"]
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{gary}
   s.rubygems_version = %q{1.3.1}
-  s.summary = %q{A Web Slideshow Creator with Markaby}
+  s.summary = %q{A Web Presentation Creator with Markaby}
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION

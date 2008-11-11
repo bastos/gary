@@ -4,7 +4,7 @@ require 'rake'
 require 'echoe'
 
 Echoe.new('gary', '0.1.0') do |p|
-  p.description    = "A Web Slideshow Creator with Markaby"
+  p.description    = "A Web Presentation Creator with Markaby"
   p.url            = "http://github.com/bastos/gary"
   p.author         = "Tiago Bastos"
   p.email          = "comechao@gmail.com"
