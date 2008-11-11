@@ -1,0 +1,40 @@
+@import url(slides.css); /* required to make the slide show run at all */
+
+/* Customizations */     
+
+html, body { 
+color: black;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+}
+
+a:link, a:visited { color: black; }
+
+h1 { font-size: 30pt;  }
+h2 { font-size: 28pt;  }
+h3 { font-size: 25pt;  }
+p, li, td, th { font-size: 18pt; }
+
+pre { font-size: 16pt;  }
+
+pre.code { 
+        background-color: black;
+        padding: 5px;
+         border: silver thick groove;
+          -moz-border-radius: 11px;
+      }
+     
+ 
+div#header, div#footer {  color: black; }
+
+#currentSlide { color: black;}
+
+#controls #navLinks a { color: black; }
+div#header {background: #ebebeb;}
+div#footer {background: #ebebeb;}
+div#controls {background: #ebebeb;}
+div#currentSlide {background: #ebebeb;}
+
+.slide {
+    background-color:#333;
+   color:#fbfbfb;
+}

@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+
+begin
+  require 'gary'
+rescue LoadError
+  require File.dirname(__FILE__) + '/../lib/gary'
+end
+
+$:.unshift File.expand_path(File.dirname(__FILE__))
+
+Gary.main(ARGV)
