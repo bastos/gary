@@ -6,6 +6,7 @@ require 'rubygems'
 require 'markaby'
 require 'fileutils'
 require 'ftools'
+require 'albino/albino'
 
 # Gary Presentation Builder
 # JS and part of the CSS from http://slideshow.rubyforge.org/
@@ -59,9 +60,11 @@ module Gary
 
   # Print usage message.
   def self.usage
-    puts "To render the slide show just type gary.
+    puts "Hello! To render the slide show just type gary.
 To add the assets folder just type, gary --assets.
 BYE"
+    puts Albino.new('class New; end', :ruby).colorize
+    puts "woot"
   end
 
   # Build de presentation slides.
@@ -73,7 +76,7 @@ BYE"
       to_s
     end
 
-    # Create a presentation with all slides, headers, controls etc.
+1    # Create a presentation with all slides, headers, controls etc.
     # You must pass the presentation title.
     def presentation(options = {}, &block)
       raise "Must have a title" unless options.has_key? :title
@@ -88,9 +91,12 @@ BYE"
           :href => '/print.css', :media => 'print'
           link.slideProj! :rel => 'stylesheet', :type => 'text/css',
           :href => 'assets/style.css', :media => 'projection'
+          link :rel => 'stylesheet', :type => 'text/css',
+          :href => 'assets/prettify.css', :media => 'screen'
           
           script :src => "assets/jquery.js", :type => "text/javascript"
           script :src => "assets/slides.js", :type => "text/javascript"
+          script :src => "assets/gary.js", :type => "text/javascript"          
           
           title @presentation_options[:title]
         end
@@ -122,6 +128,11 @@ BYE"
       div.slide options do
         instance_eval(&block) 
       end
+    end
+    
+    # Generates synta hightlight for code using albino
+    def code(options = {}, &block)
+      
     end
     
   end

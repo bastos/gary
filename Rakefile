@@ -9,7 +9,7 @@ Echoe.new('gary', '0.1.0') do |p|
   p.author         = "Tiago Bastos"
   p.email          = "comechao@gmail.com"
   p.ignore_pattern = ["tmp/*", "script/*","*.*'~"]
-  p.development_dependencies = ["markaby"]
+  p.development_dependencies = ["markaby", "open4"]
   p.bin_files = "gary"
 end
 
