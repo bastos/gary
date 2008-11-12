@@ -2,7 +2,7 @@
 
    slide  do
      h1 "Just a test"
-     code "def a; a+a;end"
+     code :type=>:ruby, :code => "def a; a+a;end"
    end
    
    slide  do

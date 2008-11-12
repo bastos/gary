@@ -19,7 +19,7 @@ Let's create a presentation with gary and some markaby, save as my-first-present
   presentation :title => "My First Presentation" do
     slide  do
      h1 "Just a test"
-      code "def a; a+a;end"
+      code :type=>:ruby, :code => "def a; a+a;end"
     end
   
     slide  do
@@ -43,9 +43,18 @@ And render the slideshow:
 Just change the assets/style.css.
 To restore default assets files just remove ./assets and run gary --assets
 
+=== Syntax highlight:
+Syntax righlight is supported using Albino http://github.com/bastos/albino
+
+==== Example:
+
+    slide  do
+     h1 "Just a test"
+      code :type=>:ruby, :code => "def a; a+a;end"
+    end
+
 === TODO:
 
-* Syntax highlight for code
 * Themes maybe
 * More examples
 
