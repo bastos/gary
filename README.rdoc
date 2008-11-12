@@ -12,6 +12,7 @@
 === Requirements:
 
 * markaby
+* pygments
 
 === Usage
 Let's create a presentation with gary and some markaby, save as my-first-presentation.rb:
