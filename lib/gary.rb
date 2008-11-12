@@ -6,7 +6,7 @@ require 'rubygems'
 require 'markaby'
 require 'fileutils'
 require 'ftools'
-require 'albino/albino'
+require 'gary/albino'
 
 # Gary Presentation Builder
 # JS and part of the CSS from http://slideshow.rubyforge.org/
