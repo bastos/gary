@@ -126,7 +126,7 @@ BYE"
     # Create a slide, you can pass some options, same options accepted by "div" tag.
     def slide(options = {}, &block)
       div.slide options do
-        instance_eval(&block) 
+        div.container { instance_eval(&block) }
       end
     end
     

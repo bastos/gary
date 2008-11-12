@@ -3,8 +3,8 @@
 /* Customizations */     
 
 html, body { 
-color: black;
-font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+  color: black;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
 }
 
 a:link, a:visited { color: black; }
@@ -21,7 +21,7 @@ pre.code {
         padding: 5px;
          border: silver thick groove;
           -moz-border-radius: 11px;
-      }
+}
      
  
 div#header, div#footer {  color: black; }
@@ -34,14 +34,18 @@ div#footer {background: #ebebeb;}
 div#controls {background: #ebebeb;}
 div#currentSlide {background: #ebebeb;}
 
+
 .slide {
-    background-color:#000;
-   color:#fbfbfb;
+  color:#fbfbfb;  background-color:#000;
 }
+
+
+.container {width:70%;margin:0 auto;}
+.container h1, .container h2, .container h3{text-align:center}
 
 /* Pygments related */
 
-.highlight  { background: #000; }
+.highlight  { background: #000; width:75%;margin:0 auto;}
 .highlight .n { color: #FFF; }
 .highlight .c { color:#5F5A60; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
