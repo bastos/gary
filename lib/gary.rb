@@ -6,6 +6,7 @@ require 'rubygems'
 require 'markaby'
 require 'fileutils'
 require 'ftools'
+require 'albino'
 
 # Gary Presentation Builder
 # JS and part of the CSS from http://slideshow.rubyforge.org/
@@ -130,8 +131,8 @@ BYE"
     end
     
     # Generates synta hightlight for code using albino
-    def code(options = {}, &block)
-      
+    def code(options = {})
+      self << Albino.new(options[:code], options[:type]).colorize
     end
     
   end
