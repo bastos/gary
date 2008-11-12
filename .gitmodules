@@ -1,0 +1,3 @@
+[submodule "albino"]
+	path = albino
+	url = git://github.com/bastos/albino.git
