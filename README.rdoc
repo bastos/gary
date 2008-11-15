@@ -54,9 +54,9 @@ Syntax righlight is supported using Albino http://github.com/bastos/albino
       code :type=>:ruby, :code => "def a; a+a;end"
     end
 
-=== TODOs ANS IDEAS :
+=== TODOs AND IDEAS :
 
-* Themes  (37signal like, My Old Teacher, Powerpoint ugly style like etc)
+* Themes  (37signals like, My Old Teacher, Powerpoint ugly style like etc)
 * More examples
 * Css based Templates for slides (Title with subtitle, title with text, title with graph etc)
 
